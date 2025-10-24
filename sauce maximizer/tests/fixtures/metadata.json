@@ -1,0 +1,18 @@
+{
+  "sample_rate": 44100,
+  "duration": 5.0,
+  "files": [
+    "test_sine.wav",
+    "test_mixed.wav",
+    "test_noise.wav",
+    "test_poor_mix.wav",
+    "test_good_mix.wav"
+  ],
+  "descriptions": {
+    "test_sine.wav": "Pure 440Hz sine wave",
+    "test_mixed.wav": "Mixed bass/mid/high frequencies",
+    "test_noise.wav": "White noise for dynamic range testing",
+    "test_poor_mix.wav": "Unbalanced mix (too much bass)",
+    "test_good_mix.wav": "Well-balanced mix"
+  }
+}
