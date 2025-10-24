@@ -40,8 +40,8 @@ function analyzeMix()
     -- Restore solo state
     reaper.SetMediaTrackInfo_Value(track, "I_SOLO", solo_state)
     
-    -- Run Python analysis
-    local cmd = string.format('%s "%s/scripts/analyze_reaper_track.py" "%s" "%s"', 
+    -- Run Python analysis (using simplified script that doesn't require librosa)
+    local cmd = string.format('%s "%s/scripts/analyze_reaper_track_simple.py" "%s" "%s"', 
                              PYTHON_EXECUTABLE, SAUCEMAX_PATH, temp_file, track_name)
     
     local analysis_result = os.execute(cmd)
